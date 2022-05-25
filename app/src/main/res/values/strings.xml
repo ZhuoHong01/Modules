@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Modules</string>
+    <string name="module_1">Module 1:</string>
+    <string name="module_4">Module 4:</string>
+    <string name="module_3">Module 3</string>
+    <string name="module_2">Module 2</string>
 </resources>
