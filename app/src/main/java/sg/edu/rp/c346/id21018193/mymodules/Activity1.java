@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -35,6 +36,33 @@ public class Activity1 extends AppCompatActivity {
         String questionsSelected = intentReceived.getStringExtra("Module");
         tvMod1.setText(questionsSelected + " is: " + etMod1);
 
-
+        tvMod1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void OnClick(View v){
+                Intent intent = new Intent(Activity1.this, Activity2.class);
+                startActivity(intent);
+            }
+        });
+        tvMod2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void OnClick(View v){
+                Intent intent = new Intent(Activity1.this, Activity3.class);
+                startActivity(intent);
+            }
+        });
+        tvMod3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void OnClick(View v){
+                Intent intent = new Intent(Activity1.this, Activity4.class);
+                startActivity(intent);
+            }
+        });
+        tvMod4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void OnClick(View v){
+                Intent intent = new Intent(Activity1.this, Activity5.class);
+                startActivity(intent);
+            }
+        });
     }
 }
