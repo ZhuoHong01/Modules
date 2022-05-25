@@ -90,6 +90,12 @@
                     android:layout_height="wrap_content"
                     android:text="Confirm modules" />
 
+                <TextView
+                    android:id="@+id/textViewHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Need help? Click here!" />
+
             </LinearLayout>
         </ScrollView>
 
