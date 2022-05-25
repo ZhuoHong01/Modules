@@ -4,100 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#52AE7171"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#7F60B5"
         android:orientation="vertical">
 
-        <ScrollView
+        <TextView
+            android:id="@+id/textViewMod1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:text="@string/module_1" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+        <EditText
+            android:id="@+id/editTextMod2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-                <TextView
-                    android:id="@+id/textViewMod1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/module_1" />
+        <TextView
+            android:id="@+id/textViewMod3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/module_3" />
 
-                <EditText
-                    android:id="@+id/editTextMod1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:importantForAutofill="no"
-                    android:inputType="textPersonName"
-                    android:minHeight="48dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/editTextMod3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-                <TextView
-                    android:id="@+id/textViewMod2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/module_2" />
+        <TextView
+            android:id="@+id/textViewMod2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/module_2" />
 
-                <EditText
-                    android:id="@+id/editTextMod2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:importantForAutofill="no"
-                    android:inputType="textPersonName"
-                    android:minHeight="48dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/editTextMod1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-                <TextView
-                    android:id="@+id/textViewMod3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/module_3" />
+        <TextView
+            android:id="@+id/textViewMod4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/module_4" />
 
-                <EditText
-                    android:id="@+id/editTextMod3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints="no"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:minHeight="48dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/editTextMod4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-                <TextView
-                    android:id="@+id/textViewMod4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/module_4" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm modules"
+            app:backgroundTint="#3F9CC6" />
 
-                <EditText
-                    android:id="@+id/editTextMod4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:importantForAutofill="no"
-                    android:inputType="textPersonName"
-                    android:minHeight="48dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Confirm modules" />
-
-                <TextView
-                    android:id="@+id/textViewHelp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Need help? Click here!" />
-
-            </LinearLayout>
-        </ScrollView>
+        <TextView
+            android:id="@+id/textViewHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need help? Click here!"
+            android:textColor="#38C0FD" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
