@@ -36,12 +36,14 @@ public class MainActivity extends AppCompatActivity {
         etMod4 = findViewById(R.id.editTextMod4);
         btnSubmit = findViewById(R.id.button);
 
-        btnSubmit.setOnClickListener(new View.OnClickListener(){
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
+            public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Activity1.class);
                 startActivity(intent);
             }
         });
+
+
     }
 }

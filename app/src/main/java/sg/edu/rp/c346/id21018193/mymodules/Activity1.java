@@ -34,35 +34,38 @@ public class Activity1 extends AppCompatActivity {
         etMod4 = findViewById(R.id.editTextMod4);
         Intent intentReceived = getIntent();
         String questionsSelected = intentReceived.getStringExtra("Module");
-        tvMod1.setText(questionsSelected + " is: " + etMod1);
+        tvMod1.setText("module 1: " +questionsSelected);
+        tvMod2.setText("module 2: " +questionsSelected);
+        tvMod3.setText("module 3: " +questionsSelected);
+        tvMod4.setText("module 4: " +questionsSelected);
 
-        tvMod1.setOnClickListener(new View.OnClickListener(){
+        tvMod1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
+            public void onClick(View view) {
                 Intent intent = new Intent(Activity1.this, Activity2.class);
                 startActivity(intent);
             }
         });
-        tvMod2.setOnClickListener(new View.OnClickListener(){
+        tvMod2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
+            public void onClick(View view) {
                 Intent intent = new Intent(Activity1.this, Activity3.class);
                 startActivity(intent);
             }
         });
-        tvMod3.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void OnClick(View v){
-                Intent intent = new Intent(Activity1.this, Activity4.class);
-                startActivity(intent);
-            }
-        });
-        tvMod4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void OnClick(View v){
-                Intent intent = new Intent(Activity1.this, Activity5.class);
-                startActivity(intent);
-            }
-        });
+       tvMod3.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(Activity1.this, Activity4.class);
+               startActivity(intent);
+           }
+       });
+       tvMod4.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(Activity1.this, Activity5.class);
+               startActivity(intent);
+           }
+       });
     }
 }

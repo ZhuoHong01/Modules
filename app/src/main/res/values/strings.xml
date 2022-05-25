@@ -4,4 +4,6 @@
     <string name="module_4">Module 4:</string>
     <string name="module_3">Module 3</string>
     <string name="module_2">Module 2</string>
+    <string name="confirm_modules">Confirm modules</string>
+    <string name="need_help_click_here">Need help? Click here!</string>
 </resources>
