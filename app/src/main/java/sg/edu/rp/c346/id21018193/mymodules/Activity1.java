@@ -4,12 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class Activity1 extends AppCompatActivity {
 
     TextView tvMod1;
     TextView tvMod2;
@@ -19,12 +17,11 @@ public class MainActivity extends AppCompatActivity {
     EditText etMod2;
     EditText etMod3;
     EditText etMod4;
-    Button btnSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_1);
 
         tvMod1 = findViewById(R.id.textViewMod1);
         tvMod2 = findViewById(R.id.textViewMod2);
@@ -34,14 +31,10 @@ public class MainActivity extends AppCompatActivity {
         etMod2 = findViewById(R.id.editTextMod2);
         etMod3 = findViewById(R.id.editTextMod3);
         etMod4 = findViewById(R.id.editTextMod4);
-        btnSubmit = findViewById(R.id.button);
+        Intent intentReceived = getIntent();
+        String questionsSelected = intentReceived.getStringExtra("Module");
+        tvMod1.setText(questionsSelected + " is: " + etMod1);
 
-        btnSubmit.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void OnClick(View v){
-                Intent intent = new Intent(MainActivity.this, Activity1.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }
