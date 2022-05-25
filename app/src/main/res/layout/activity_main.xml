@@ -20,6 +20,22 @@
             android:text="@string/module_1" />
 
         <EditText
+            android:id="@+id/editTextMod1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewMod2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/module_2" />
+
+        <EditText
             android:id="@+id/editTextMod2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,22 +57,6 @@
             android:layout_height="wrap_content"
             android:autofillHints="no"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/textViewMod2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/module_2" />
-
-        <EditText
-            android:id="@+id/editTextMod1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck" />
